@@ -1,7 +1,7 @@
 # 🥰Nice to meet you!
 
 👻 邶柒EvATive7   
-🐺 Siberian plain wolf  
+🐺 Canis lupus campestris  
 😋 Enthusiast who do not write comments  
 
 #### I use  
