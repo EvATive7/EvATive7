@@ -1,7 +1,7 @@
 # 🥰Nice to meet you!
 
 🐺 **邶柒EvATive7** <!-- / Canis lupus campestris -->  
-💐 My dear -> **Enciodes SilverAsh**  
+💐 Dearest -> **Enciodes SilverAsh**  
 ⚪ I Believe「 lex parsimoniae 」
 
 #### I use  
