@@ -2,7 +2,7 @@
 
 🐺 **邶柒EvATive7** <!-- / Canis lupus campestris -->  
 💐 My dear -> **Enciodes SilverAsh**  
-⚪ Belief「 lex parsimoniae 」
+⚪ I Believe「 lex parsimoniae 」
 
 #### I use  
 ![](https://img.shields.io/badge/Spring-white?logo=spring&logoColor=6DB33F)
