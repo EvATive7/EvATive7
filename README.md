@@ -11,6 +11,7 @@
 ![](https://img.shields.io/badge/Android-white?logo=android&logoColor=34A853)
 ![](https://img.shields.io/badge/Flutter-white?logo=flutter&logoColor=02569B)
 ![](https://img.shields.io/badge/Nginx-white?logo=nginx&logoColor=009639)
+![](https://img.shields.io/badge/TensorFlow-white?logo=tensorflow&logoColor=FF6F00)
 #### with
 ![](https://img.shields.io/badge/Python-white?logo=python&logoColor=3776AB)
 ![](https://img.shields.io/badge/JavaScript-white?logo=javascript&logoColor=F7DF1E)
@@ -26,3 +27,5 @@
 #### on
 ![](https://img.shields.io/badge/Windows-white?logo=windows&logoColor=0078D4)
 ![](https://img.shields.io/badge/Ubuntu-white?logo=ubuntu&logoColor=E95420)
+![](https://img.shields.io/badge/Nvidia-white?logo=nvidia&logoColor=76B900)
+![](https://img.shields.io/badge/Intel-white?logo=intel&logoColor=0071C5)
