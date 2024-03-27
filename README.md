@@ -1,8 +1,9 @@
 # 🥰Nice to meet you!
 
-🐺 **邶柒EvATive7** <!-- / Canis lupus campestris -->  
-💐 Dearest -> **Enciodes SilverAsh**  
-⚪ I Believe「 lex parsimoniae 」
+😋 **邶柒EvATive7**  
+🐺 I am [**Canis lupus campestris**](https://en.wikipedia.org/wiki/Steppe_wolf)  
+💐 I love **Enciodes SilverAsh**  
+⚪ I believe「 lex parsimoniae 」
 
 #### I use  
 ![](https://img.shields.io/badge/Spring-white?logo=spring&logoColor=6DB33F)
