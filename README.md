@@ -31,4 +31,4 @@
 ![](https://img.shields.io/badge/Nvidia-white?logo=nvidia&logoColor=76B900)
 ![](https://img.shields.io/badge/Intel-white?logo=intel&logoColor=0071C5)
 
-Avatar ©-Ask--
+###### Avatar ©-Ask--
