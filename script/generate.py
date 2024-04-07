@@ -93,6 +93,7 @@ result = \
 {table_str}
 </div>
 
+{footer_str}
 </div>'''
 
 open(os.path.join(__file__, '../../', 'README.md'), 'w', encoding='utf-8').write(result)
