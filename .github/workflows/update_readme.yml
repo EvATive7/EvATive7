@@ -1,0 +1,32 @@
+name: Update README Automatically
+
+on:
+  push
+
+jobs:
+  run-script-commit-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run script
+        run: python script/generate.py
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "update: auto generate" || exit 0
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: main

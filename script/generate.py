@@ -1,4 +1,4 @@
-import os
+from os import path
 
 intro = {
     '🐺': '**邶柒EvATive7**',
@@ -95,5 +95,5 @@ result = \
 
 {footer_str}
 </div>'''
-
-open(os.path.join(__file__, '../../', 'README.md'), 'w', encoding='utf-8').write(result)
+file = path.join(path.dirname(path.dirname(path.realpath(__file__))), 'README.md')
+open(file, 'w', encoding='utf-8').write(result)
