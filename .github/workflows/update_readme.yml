@@ -1,7 +1,9 @@
 name: Update README Automatically
 
 on:
-  push
+  push:
+    branches: 
+      - '**'
 
 jobs:
   run-script-commit-push:
@@ -9,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.ref }}
           persist-credentials: false
 
       - name: Setup Python
@@ -29,4 +32,4 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          branch: main
+          branch: ${{ github.ref }}
