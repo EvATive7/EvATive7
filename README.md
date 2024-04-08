@@ -5,7 +5,7 @@
 💐 Enciodes SilverAsh  
 ⚪ 「 lex parsimoniae 」  
 
-「 如果一次花开就是一次告白 你看那片紫罗兰已开成了海 」
+
 
 <div style="margin-left: auto; margin-right: auto; display: table;">
 
