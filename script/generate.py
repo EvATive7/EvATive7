@@ -48,7 +48,7 @@ badges = {
 footer = [
     'Avatar ©-Ask--'
 ]
-extra = "「 如果一次花开就是一次告白 你看那片紫罗兰已开成了海 」"
+extra = ""
 
 intro_str = []
 for index, value in enumerate(intro.items()):
