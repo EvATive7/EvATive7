@@ -19,6 +19,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Resolve Deps
+        run: pip install -r script/requirements.txt
+
       - name: Run script
         run: python script/generate.py
 
