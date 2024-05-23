@@ -1,3 +1,10 @@
+# Copyright (c) 2024 EvATive7
+# All rights reserved.
+#
+# This file is not open source and not licensed for use by any party.
+# Unauthorized copying, modification, or distribution of this file,
+# via any medium, is strictly prohibited.
+
 from os import path
 from dataclasses import dataclass, field
 from urllib.parse import quote
