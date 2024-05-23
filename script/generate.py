@@ -1,6 +1,8 @@
 from os import path
 from dataclasses import dataclass, field
+from urllib.parse import quote
 import yaml
+import requests
 
 config_path = path.join(path.dirname(path.realpath(__file__)), 'config.yml')
 readme_path = path.join(path.dirname(path.dirname(path.realpath(__file__))), 'README.md')
@@ -30,6 +32,44 @@ def render_nohead_table(table_data: dict[str, str]):
     return table_str
 
 
+icon_data: dict[str, dict[str, object]] = None
+
+
+def fetch_icon_url(args):
+    def dofetch(icon_name, icon_id=None, icon_color=None):
+        global icon_data
+
+        def parse_id(name: str):
+            return name.lower().replace(' ', '').replace('+', 'plus').replace('.', 'dot').replace('&', 'and')
+
+        if not icon_data:
+            try:
+                _data = requests.get('https://raw.githubusercontent.com/simple-icons/simple-icons/develop/_data/simple-icons.json', timeout=5).json()['icons']
+                icon_data = {}
+                for _icon in _data:
+                    title = _icon.get('slug')
+                    if not title:
+                        title = _icon['title']
+                    icon_data[parse_id(title)] = _icon
+            except Exception as e:
+                raise RuntimeError(f'Unable to fetch logo details from github.com/simple-icons/simple-icons: {e}')
+
+        if not icon_color:
+            if not icon_id:
+                icon_id = parse_id(icon_name)
+            if _detail := icon_data.get(icon_id):
+                icon_color = _detail['hex']
+            else:
+                raise RuntimeError(f'Unable to find the corresponding icon information for {icon_name}')
+
+        return f'https://img.shields.io/badge/{quote(icon_name)}-white?logo={quote(icon_id)}&logoColor={icon_color}'
+
+    if type(args) == str:
+        return dofetch(args)
+    elif type(args) == list:
+        return dofetch(*args)
+
+
 config = Config(**yaml.safe_load(open(config_path, 'r')))
 
 intro_str = []
@@ -43,7 +83,7 @@ config.badge = {
         [
             ' '.join(
                 [
-                    f'![](https://img.shields.io/badge/{badge[0]}-white?logo={badge[1]}&logoColor={badge[2]})'
+                    f'![]({fetch_icon_url(badge)})'
                     for badge in line
                 ]
             )
@@ -55,8 +95,8 @@ config.badge = {
 
 footer_str = '  \n'.join(['###### ' + _footer for _footer in config.footer])
 
-result = \
-    f'''<div align="center">
+result = f'''
+<div align="center">
 
 # 🥰Nice to meet you!
 {intro_str}  
@@ -69,5 +109,6 @@ result = \
 </div>
 
 {footer_str}
-</div>'''
+</div>
+'''
 open(readme_path, 'w', encoding='utf-8').write(result)
