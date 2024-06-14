@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 🥰Nice to meet you!
+# 🥰Nice to meet you~
 🐺 **邶柒EvATive7**  
 💐 Enciodes SilverAsh  
 ⚪ 「 lex parsimoniae 」  
