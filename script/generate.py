@@ -105,7 +105,7 @@ footer_str = '  \n'.join(['###### ' + _footer for _footer in config.footer])
 result = f'''
 <div align="center">
 
-# 🥰Nice to meet you!
+# 🥰Nice to meet you~
 {intro_str}  
 
 {config.extra}
