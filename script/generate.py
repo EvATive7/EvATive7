@@ -77,7 +77,7 @@ def fetch_icon_url(args):
         return dofetch(*args)
 
 
-config = Config(**yaml.safe_load(open(config_path, 'r')))
+config = Config(**yaml.safe_load(open(config_path, 'r', encoding='utf-8')))
 
 intro_str = []
 for index, value in enumerate(config.introduction.items()):

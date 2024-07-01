@@ -29,6 +29,7 @@ badge:
         - materialdesign
     - - - Code
         - visualstudiocode
+        - 007ACC
       - - Git
         - git
       - - Firefox
