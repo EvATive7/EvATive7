@@ -4,12 +4,12 @@ introduction:
   ⚪: 「 lex parsimoniae 」
 badge:
   I use:
-    - - Spring
+    - - Android
+      - Flutter
       - - Vue
         - vuedotjs
       - .NET
-      - Android
-      - Flutter
+      - Spring
       - Nginx
       - TensorFlow
   with:
