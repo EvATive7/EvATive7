@@ -45,5 +45,9 @@ badge:
         - nvidia
       - - Intel
         - intel
+      - - 阿里云
+        - alibabacloud
+      - - Google_Cloud
+        - googlecloud
 footer: ["Avatar ©-Ask--"]
 extra: ""
