@@ -6,16 +6,17 @@ badge:
   I use:
     - - Android
       - Flutter
-      - - Vue
-        - vuedotjs
+      - - Electron
+        - electron
       - .NET
       - Spring
-      - Nginx
       - TensorFlow
   with:
     - - Python
       - JavaScript
       - TypeScript
+      - - Vue
+        - vuedotjs
       - - C#
         - csharp
         - 512BD4
@@ -27,6 +28,8 @@ badge:
         - dart
     - - - Material_Design
         - materialdesign
+    - - Nginx
+      - Docker
     - - - Code
         - visualstudiocode
         - 007ACC
@@ -41,6 +44,7 @@ badge:
       - - Ubuntu
         - ubuntu
         - E95420
+      - Android
       - - Nvidia
         - nvidia
       - - Intel
