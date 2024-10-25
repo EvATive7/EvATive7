@@ -28,8 +28,6 @@ badge:
         - dart
     - - - Material_Design
         - materialdesign
-    - - Nginx
-      - Docker
     - - - Code
         - visualstudiocode
         - 007ACC
@@ -37,6 +35,7 @@ badge:
         - git
       - - Firefox
         - firefoxbrowser
+      - Docker
   "on":
     - - - Windows
         - windows
