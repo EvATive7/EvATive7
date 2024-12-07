@@ -27,6 +27,7 @@ badge:
         - oracle
       - - Dart
         - dart
+      - Go
     - - - Material_Design
         - materialdesign
     - - - Code
