@@ -16,5 +16,5 @@
 | on | ![](https://img.shields.io/badge/Windows-white?logo=windows&logoColor=0078D4) ![](https://img.shields.io/badge/Ubuntu-white?logo=ubuntu&logoColor=E95420) ![](https://img.shields.io/badge/Android-white?logo=android&logoColor=34A853) ![](https://img.shields.io/badge/Nvidia-white?logo=nvidia&logoColor=76B900) ![](https://img.shields.io/badge/Intel-white?logo=intel&logoColor=0071C5) ![](https://img.shields.io/badge/%E9%98%BF%E9%87%8C%E4%BA%91-white?logo=alibabacloud&logoColor=FF6A00) ![](https://img.shields.io/badge/Google_Cloud-white?logo=googlecloud&logoColor=4285F4) |
 </div>
 
-###### Avatar ©-Ask--
+
 </div>
