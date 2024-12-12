@@ -103,7 +103,7 @@ config.badge = {
 footer_str = '  \n'.join(['###### ' + _footer for _footer in config.footer])
 
 result = f'''
-<div align="center">
+<div align="left">
 
 # 🥰Nice to meet you~
 {intro_str}  
