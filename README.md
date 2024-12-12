@@ -1,5 +1,5 @@
 
-<div align="center">
+<div align="left">
 
 # 🥰Nice to meet you~
 🐺 **邶柒EvATive7**  
