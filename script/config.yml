@@ -30,7 +30,7 @@ badge:
       - Go
     - - - Material_Design
         - materialdesign
-    - - - Code
+    - - - Visual Studio Code
         - visualstudiocode
         - 007ACC
       - - Git
