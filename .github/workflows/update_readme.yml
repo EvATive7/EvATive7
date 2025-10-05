@@ -2,8 +2,9 @@ name: Update README Automatically
 
 on:
   push:
-    branches: 
-      - '**'
+    branches:
+      - "**"
+  workflow_dispatch:
 
 jobs:
   run-script-commit-push:
@@ -17,7 +18,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Resolve Deps
         run: pip install -r script/requirements.txt
