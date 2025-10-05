@@ -1,0 +1,111 @@
+{
+  "introduction": {
+    "🐺": "**邶柒EvATive7**",
+    "💐": "Enciodes SilverAsh",
+    "⚪": "「 lex parsimoniae 」",
+    "🔒": "PGP Fingerprint: `07AE 8DC8 1BA0 5B76 1175 3D81 CF3E 4F1F 6589 2FAC`"
+  },
+  "badge": {
+    "I use": [
+      [
+        "Android",
+        "Flutter",
+        ".NET",
+        "Electron",
+        "Vue.js",
+        "Next.js",
+        "FastAPI",
+        "Spring",
+        "TensorFlow",
+        "LangChain",
+        "Magisk"
+      ]
+    ],
+    "with": [
+      [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        [
+          "C#",
+          "csharp",
+          "512BD4"
+        ],
+        [
+          "C++",
+          "cplusplus"
+        ],
+        [
+          "Java",
+          "oracle"
+        ],
+        [
+          "Dart",
+          "dart"
+        ],
+        "Go"
+      ],
+      [
+        [
+          "Material_Design",
+          "materialdesign"
+        ]
+      ],
+      [
+        [
+          "Code",
+          "base64:png:visualstudiocode"
+        ],
+        [
+          "Git",
+          "git"
+        ],
+        [
+          "Firefox",
+          "firefoxbrowser"
+        ],
+        "Docker"
+      ],
+      [
+        [
+          "ChatGPT",
+          "openai"
+        ],
+        [
+          "Qwen",
+          "base64:svg:qwen"
+        ]
+      ]
+    ],
+    "on": [
+      [
+        [
+          "Windows",
+          "windows",
+          "0078D4"
+        ],
+        [
+          "Ubuntu",
+          "ubuntu",
+          "E95420"
+        ],
+        "Android",
+        [
+          "Nvidia",
+          "nvidia"
+        ],
+        [
+          "Intel",
+          "intel"
+        ],
+        [
+          "阿里云",
+          "alibabacloud"
+        ],
+        "Google_Cloud"
+      ]
+    ]
+  },
+  "footer": [],
+  "extra": ""
+}
