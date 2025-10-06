@@ -4,7 +4,6 @@ import json
 from os import path
 from dataclasses import dataclass, field
 from urllib.parse import quote, urlencode
-import yaml
 import requests
 
 config_path = path.join(path.dirname(path.realpath(__file__)), "config.json")
@@ -48,16 +47,16 @@ def parse_id(name: str):
 
 icon_data: dict[str, dict[str, object]] = {}
 
+print("[INFO] Fetching simple-icons data from GitHub...")
 try:
     _data = requests.get(
         "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/data/simple-icons.json",
         timeout=5,
     ).json()
     for _icon in _data:
-        title = _icon.get("slug")
-        if not title:
-            title = _icon["title"]
+        title = _icon.get("slug") or _icon["title"]
         icon_data[parse_id(title)] = _icon
+    print(f"[INFO] Loaded {len(icon_data)} icons successfully.")
 except Exception as e:
     raise RuntimeError(
         f"Unable to fetch logo details from github.com/simple-icons/simple-icons: {e}"
@@ -103,26 +102,26 @@ def fetch_icon_url(args):
         if icon_color:
             params["logoColor"] = icon_color
 
-        if params:
-            final_url = f"{base_url}?{urlencode(params)}"
-        else:
-            final_url = f"{base_url}"
-
+        final_url = f"{base_url}?{urlencode(params)}" if params else base_url
+        print(f"[INFO] Generated badge URL for '{icon_name}': {final_url[0:100]}...")
         return final_url
 
-    if type(args) == str:
+    if isinstance(args, str):
         return dofetch(args)
-    elif type(args) == list:
+    elif isinstance(args, list):
         return dofetch(*args)
 
 
+print(f"[INFO] Loading config from {config_path}...")
 config = Config(**json.loads(open(config_path, "r", encoding="utf-8").read()))
+print("[INFO] Config loaded successfully.")
 
 intro_str = []
 for index, value in enumerate(config.introduction.items()):
     intro_str.append("{} {}".format(*value))
 intro_str = "  \n".join(intro_str)
 
+print("[INFO] Rendering badges...")
 config.badge = {
     header: "<br>".join(
         [
@@ -151,4 +150,7 @@ result = f"""
 {footer_str}
 </div>
 """
+
+print(f"[INFO] Writing README.md to {readme_path}...")
 open(readme_path, "w", encoding="utf-8").write(result)
+print("[INFO] README.md generation completed successfully.")
