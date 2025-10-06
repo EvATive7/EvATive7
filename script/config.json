@@ -31,42 +31,26 @@
           "csharp",
           "512BD4"
         ],
-        [
-          "C++",
-          "cplusplus"
-        ],
+        "C++",
         [
           "Java",
           "oracle"
         ],
-        [
-          "Dart",
-          "dart"
-        ],
+        "Dart",
         "Go"
       ],
       [
-        [
-          "Material_Design",
-          "materialdesign"
-        ]
-      ],
-      [
+        "Material_Design",
         [
           "Code",
           "base64:png:visualstudiocode"
         ],
-        [
-          "Git",
-          "git"
-        ],
+        "Git",
         [
           "Firefox",
           "firefoxbrowser"
         ],
-        "Docker"
-      ],
-      [
+        "Docker",
         [
           "ChatGPT",
           "openai"
@@ -79,25 +63,11 @@
     ],
     "on": [
       [
-        [
-          "Windows",
-          "windows",
-          "0078D4"
-        ],
-        [
-          "Ubuntu",
-          "ubuntu",
-          "E95420"
-        ],
+        "Windows",
+        "Ubuntu",
         "Android",
-        [
-          "Nvidia",
-          "nvidia"
-        ],
-        [
-          "Intel",
-          "intel"
-        ],
+        "Nvidia",
+        "Intel",
         [
           "阿里云",
           "alibabacloud"
