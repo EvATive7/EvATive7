@@ -5,7 +5,10 @@
     "⚪": "「 lex parsimoniae 」",
     "🔒": "PGP Fingerprint: `07AE 8DC8 1BA0 5B76 1175 3D81 CF3E 4F1F 6589 2FAC`"
   },
-  "badge": {
+  "badge_config": {
+    "style": "for-the-badge"
+  },
+  "table_badges": {
     "I use": [
       [
         "Android",
@@ -76,6 +79,18 @@
       ]
     ]
   },
+  "footer_badges": [
+    /*[
+      [
+        "RHODES ISLAND",
+        "base64:png:ri"
+      ],
+      [
+        "KARLAN Trade",
+        "base64:png:kltrade"
+      ]
+    ]*/
+  ],
   "footer": [],
   "extra": ""
 }

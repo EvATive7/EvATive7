@@ -1,12 +1,14 @@
 # 2025 EvATive7
 
-import json
 from os import path
-from dataclasses import dataclass, field
+from typing import Any
 from urllib.parse import quote, urlencode
-import requests
 
-config_path = path.join(path.dirname(path.realpath(__file__)), "config.json")
+import json5
+import requests
+from pydantic import BaseModel, Field
+
+config_path = path.join(path.dirname(path.realpath(__file__)), "config.jsonc")
 resource_path = path.join(
     path.dirname(path.dirname(path.realpath(__file__))), "resources"
 )
@@ -15,11 +17,12 @@ readme_path = path.join(
 )
 
 
-@dataclass
-class Config:
-    introduction: dict[str, str] = field(default_factory=dict)
-    badge: dict[str, list[list[list]]] = field(default_factory=dict)
-    footer: list = field(default_factory=list)
+class Config(BaseModel):
+    introduction: dict[str, str] = Field(default_factory=dict)
+    badge_config: dict[str, str] = Field(default_factory=dict)
+    table_badges: dict[str, list[list[list[str] | str]]] = Field(default_factory=dict)
+    footer_badges: list[list[list[Any]]] = Field(default_factory=list)
+    footer: list[Any] = Field(default_factory=list)
     extra: str = ""
 
 
@@ -76,6 +79,9 @@ def fetch_icon_url(args):
         base_url = f"https://img.shields.io/badge/{quote(icon_name)}-white"
         params = {}
 
+        if badge_style := config.badge_config.get("style"):
+            params["style"] = badge_style
+
         if icon_id.startswith("base64:"):
             icon_id = icon_id.removeprefix("base64:")
             if icon_id.startswith("png:"):
@@ -113,7 +119,9 @@ def fetch_icon_url(args):
 
 
 print(f"[INFO] Loading config from {config_path}...")
-config = Config(**json.loads(open(config_path, "r", encoding="utf-8").read()))
+config = Config.model_validate(
+    json5.loads(open(config_path, "r", encoding="utf-8").read())
+)
 print("[INFO] Config loaded successfully.")
 
 intro_str = []
@@ -122,15 +130,21 @@ for index, value in enumerate(config.introduction.items()):
 intro_str = "  \n".join(intro_str)
 
 print("[INFO] Rendering badges...")
-config.badge = {
-    header: "<br>".join(
+
+
+def render_badge(value: list[list[str]]):
+    return "<br>".join(
         [
             " ".join([f"![]({fetch_icon_url(badge)})" for badge in line])
             for line in value
         ]
     )
-    for header, value in config.badge.items()
+
+
+table_badges = {
+    header: render_badge(value) for header, value in config.table_badges.items()
 }
+footer_badges = render_badge(config.footer_badges)
 
 footer_str = "  \n".join(["###### " + _footer for _footer in config.footer])
 
@@ -144,8 +158,10 @@ result = f"""
 
 <div style="margin-left: auto; margin-right: auto; display: table;">
 
-{render_nohead_table(config.badge)}
+{render_nohead_table(table_badges)}
 </div>
+
+{footer_badges}
 
 {footer_str}
 </div>
