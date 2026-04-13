@@ -15,8 +15,14 @@
           "Claude Code",
           "claude"
         ],
-        "Codex",
-        "Antigravity",
+        [
+          "Codex",
+          "base64:svg:codex"
+        ],
+        [
+          "Antigravity",
+          "base64:svg:antigravity"
+        ],
         "Cursor"
       ]
     ],
@@ -33,7 +39,10 @@
         ]
       ],
       [
-        "ChatGPT",
+        [
+          "ChatGPT",
+          "base64:svg:openai"
+        ],
         "Claude",
         [
           "Gemini",
@@ -52,7 +61,10 @@
           "阿里云",
           "alibabacloud"
         ],
-        "AWS",
+        [
+          "AWS",
+          "base64:svg:aws"
+        ],
         "Google_Cloud",
         "OpenRouter"
       ]
