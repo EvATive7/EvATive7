@@ -9,37 +9,55 @@
     "style": "for-the-badge"
   },
   "table_badges": {
-    "Use": [
+    "I use": [
       [
-        [
-          "Claude Code",
-          "claude"
-        ],
-        "Codex",
-        "Antigravity",
-        "Cursor"
+        "Android",
+        "Flutter",
+        ".NET",
+        "Electron",
+        "Vue.js",
+        "Next.js",
+        "FastAPI",
+        "Spring",
+        "TensorFlow",
+        "LangChain",
+        "Magisk"
       ]
     ],
     "with": [
+      [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        [
+          "C#",
+          "csharp",
+          "512BD4"
+        ],
+        "C++",
+        [
+          "Java",
+          "oracle"
+        ],
+        "Dart",
+        "Go"
+      ],
       [
         "Material_Design",
         [
           "Code",
           "base64:png:visualstudiocode"
         ],
+        "Git",
         [
           "Firefox",
           "firefoxbrowser"
-        ]
-      ],
-      [
-        "ChatGPT",
-        "Claude",
-        [
-          "Gemini",
-          "googlegemini"
         ],
-        "Minimax",
+        "Docker",
+        [
+          "ChatGPT",
+          "openai"
+        ],
         [
           "Qwen",
           "base64:svg:qwen"
@@ -48,13 +66,16 @@
     ],
     "on": [
       [
+        "Windows",
+        "Ubuntu",
+        "Android",
+        "Nvidia",
+        "Intel",
         [
           "阿里云",
           "alibabacloud"
         ],
-        "AWS",
-        "Google_Cloud",
-        "OpenRouter"
+        "Google_Cloud"
       ]
     ]
   },
