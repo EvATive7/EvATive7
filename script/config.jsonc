@@ -48,7 +48,7 @@
           "Gemini",
           "googlegemini"
         ],
-        "Minimax",
+        "DeepSeek",
         [
           "Qwen",
           "base64:svg:qwen"
