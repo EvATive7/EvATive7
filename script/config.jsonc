@@ -23,7 +23,7 @@
           "Antigravity",
           "base64:svg:antigravity"
         ],
-        "Cursor"
+        "Pi"
       ]
     ],
     "with": [
@@ -40,7 +40,7 @@
       ],
       [
         [
-          "ChatGPT",
+          "GPT",
           "base64:svg:openai"
         ],
         "Claude",
